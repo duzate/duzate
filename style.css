@@ -164,6 +164,7 @@ body {
 .tab-link {
     font-size: 0.88rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .projects {
