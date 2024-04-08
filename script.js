@@ -11,7 +11,6 @@ const getUser = async () => {
 
 const userProfile = async () => {
   const user = await getUser()
-  console.log(user);
   AvatarUser.forEach(
     element => {
       element.src = user.avatar_url
@@ -36,7 +35,7 @@ const projectCard = (repo, limit) => repo.slice(0, limit).map(item =>
       <span class="title-project">${item.name}</span>
       </div>
       <p class="description">
-      ${item.description}
+      ${item.description === null ? ' ' : item.description}
       </p>
       <div class="footer">
       <div class="states">
@@ -60,7 +59,6 @@ const projectCard = (repo, limit) => repo.slice(0, limit).map(item =>
 
 const projectRender = async (limit) => {
   const repo = await getRepos()
-  console.log(repo);
   const projectTemplate = projectCard(repo, limit)
   div.innerHTML = projectTemplate
 }

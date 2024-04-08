@@ -303,12 +303,12 @@ body {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
     .container {
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
-    }
+    }   
 
     .side {
         width: 100%;
