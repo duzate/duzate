@@ -164,7 +164,6 @@ body {
 .tab-link {
     font-size: 0.88rem;
     font-weight: 400;
-    cursor: pointer;
 }
 
 .projects {
@@ -303,7 +302,7 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
     .container {
         display: flex;
         flex-direction: column;
