@@ -46,6 +46,9 @@ const projectCard = (repo, limit) => repo.slice(0, limit).map(item =>
       <div class="branch">
       <img class="svg-img" src="image/git-branch.svg" alt="git-branch">
       <span>${item.forks_count}</span>
+      <div class="branch">
+      ${item.private == false ? `<img class="svg-img" src="image/unlock.svg" alt="unlock"></img>` : `<img class="svg-img" src="image/lock.svg" alt="lock"></img>`}
+      </div>
       </div>
       </div>
       <div class="program">
